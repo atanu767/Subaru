@@ -1818,11 +1818,11 @@ h4 {
         max-width:650px;
         margin: auto;
         padding-bottom:25px;
-        text-align: center;
+        
      }
     .subaru-car-title h3::before{
         height: 36px;
-        left: 50px;
+        left: 0px;
     }
     .subaru-car-box{
         max-width:510px;
@@ -2151,6 +2151,12 @@ h4 {
         }
         .subaru-car{
             max-width: 340px;
+        }
+        .subaru-car-title h3{
+            font-size: 25px;
+        }
+        .subaru-car-title h3::before{
+            height:30px;
         }
 }
 @media(max-width:575px){
