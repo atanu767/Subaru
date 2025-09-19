@@ -44,21 +44,9 @@ h1 {
     max-width: 641px;
     
     position: relative;
-    margin-bottom: 28px;
-}
-.banner-content h1{
-    padding-left: 23px;
+    /* margin-bottom: 28px; */
 }
 
-.banner-content h1::before {
-    position: absolute;
-    content: "";
-    width: 6px;
-    height: 128px;
-    background: var(--btn-color);
-    top: 10px;
-    left: 0;
-}
 
 h2 {
     font-family: "Nunito Sans", sans-serif;
@@ -250,9 +238,23 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 646px;
+    /* min-height: 646px; */
 
-    padding: 190px 0 210px 0;
+    padding: 190px 0 211px 0;
+}
+.banner-content h1{
+    padding-left: 23px;
+    margin-bottom: 32px;
+}
+
+.banner-content h1::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 128px;
+    background: var(--btn-color);
+    top: 10px;
+    left: 0;
 }
 
 .cmn-btn {
@@ -1048,12 +1050,12 @@ h4 {
 
 .events-banner {
     width: 100%;
-    min-height: 400px;
+   
     background: url(images/event-banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 170px 0 10px 0;
+    padding: 172px 0;
     position: relative;
 }
 
@@ -1120,7 +1122,7 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 120px 0 10px 0;
+    padding: 129px 0;
     position: relative;
 }
 
@@ -1249,8 +1251,8 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 400px;
-    padding: 165px 0 10px 0;
+    
+    padding: 172px 0;
     position: relative;
 }
 
@@ -1565,7 +1567,7 @@ h4 {
 .faq-banner{
     width: 100%;
     position: relative;
-    padding: 137px 0;
+    padding: 132px 0;
     background: url(images/faq-banner.png);
      background-size: cover;
     background-repeat: no-repeat;
@@ -1930,6 +1932,12 @@ h4 {
     .logo{
         width: 300px;
     }
+    .result-banner{
+        padding: 100px 0;
+    }
+    .events-banner{
+        padding: 150px 0;
+    }
     .events-content h1{
         font-size: 50px;
     }
@@ -1955,6 +1963,9 @@ h4 {
     }
 
     /* -- result page -- */
+    .result-banner{
+        padding: 100px 0;
+    }
     .result-content h1{
         font-size:50px;
     }
@@ -1964,6 +1975,9 @@ h4 {
     }
 
      /* -- sponsor page -- */
+     .sponsors-banner{
+        padding: 120px 0;
+     }
      .sponsors-content h1{
         font-size:50px;
     }
@@ -1988,6 +2002,9 @@ h4 {
      }
 
      /* -- contact page -- */
+     .contact-banner{
+        padding: 120px 0;
+     }
       .contact-banner h1{
         font-size: 50px;
     }
@@ -2000,6 +2017,9 @@ h4 {
     }
 
      /*-- faq page --  */
+     .faq-banner{
+        padding: 100px 0;
+     }
      
        .faq-question-box{
         padding:30px;
@@ -2014,6 +2034,9 @@ h4 {
     
 }
 @media(max-width:575px){
+    .events-banner{
+        padding: 100px 0;
+    }
     .events-page-card{
         padding: 60px 0;
     }
@@ -2063,6 +2086,9 @@ h4 {
     }
 
      /* -- result page -- */
+     .result-banner{
+        padding: 80px 0;
+    }
      
      .series-point{
         padding: 50px 25px;
@@ -2086,17 +2112,23 @@ h4 {
     }
 
     /* -- sponsor page -- */
+    .sponsors-banner{
+        padding: 80px 0;
+     }
     .sponsors-hero-left h2{
         font-size:25px;
     }
     .sponsors-hero-right-bg{
         width: 250px;
-    }
+    }.events-banner
     .sponsors-hero .sponsor-left-img{
         bottom: 40px;
     }
 
     /* -- contact page -- */
+    .contact-banner{
+        padding: 80px 0;
+     }
     .contact-card-group .col-33{
         max-width: 100%;
         flex:0 0 100%;
@@ -2104,6 +2136,10 @@ h4 {
     }
 
     /* -- faq page -- */
+    .faq-banner{
+        padding: 80px 0;
+     }
+     
     .faq-question-box{
         margin-bottom: 180px;
     }
