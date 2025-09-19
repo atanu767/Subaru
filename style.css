@@ -1757,6 +1757,24 @@ h4 {
         align-content: center;
 
     }
+    .events-card-img{
+        max-width: 100%;
+    }
+    .events-card{
+        height: 100%;
+    }
+    .events .col-50{
+        margin-bottom: 30px;
+    }
+    .events-2-img{
+        height: 1250px;
+    }
+    .events-card-2{
+        padding: 20px 30px 20px 20px;
+    }
+    .events-card-img-2{
+        padding: 20px 25px 30px;
+    }
     .nav-links{
         position: fixed;
         top:45px;
@@ -1851,6 +1869,9 @@ h4 {
     }
     .hero-main-img{
         margin-bottom: 50px;
+    }
+    .events-2-img{
+        height: 1180px;
     }
     /* -- events page -- */
     .events-card{
