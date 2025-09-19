@@ -551,7 +551,7 @@ h4 {
     position: absolute;
 
     width: 100%;
-    height:966px;
+    height: 966px;
     /* min-height: 100%; */
 
 
@@ -1816,7 +1816,7 @@ h4 {
     }
 
     .events-2-img {
-        height:1030px;
+        height: 1030px;
     }
 
 
@@ -1952,16 +1952,20 @@ h4 {
         margin-bottom: 40px;
 
     }
-    .gallery{
+
+    .gallery {
         padding: 60px 0;
     }
-    .gallery-box{
+
+    .gallery-box {
         flex-wrap: wrap;
     }
-    .gallery-card{
+
+    .gallery-card {
         width: 50%;
     }
-    .gallery-img{
+
+    .gallery-img {
         width: 100%;
     }
 
@@ -2248,12 +2252,13 @@ h4 {
     .banner-content h1::before {
         height: 88px;
     }
-   
-    .gallery{
+
+    .gallery {
         padding: 40px 0;
     }
-    .gallery h3{
-        font-size:35px;
+
+    .gallery h3 {
+        font-size: 35px;
         margin-bottom: 40px;
     }
 
@@ -2295,10 +2300,12 @@ h4 {
     .events .home-event-card {
         flex-direction: column;
     }
-    .sponsor .sponsors-title{
+
+    .sponsor .sponsors-title {
         font-size: 35px;
     }
-    .sponsor .sponsors-title::before{
+
+    .sponsor .sponsors-title::before {
         height: 42px;
         left: 21px;
     }
@@ -2509,7 +2516,7 @@ h4 {
         top: 0;
         height: 100%;
     }
-   
+
 
     .subaru-shoe {
         left: 50%;
@@ -2523,20 +2530,25 @@ h4 {
     .events-card-title h4 {
         font-size: 17px;
     }
-     .gallery-card{
+
+    .gallery-card {
         width: 100%;
     }
-    .sponsor-box .slick-list{
+
+    .sponsor-box .slick-list {
         padding: 50px 0 220px 0;
     }
-    .sponsor .sponsors-title{
+
+    .sponsor .sponsors-title {
         font-size: 30px;
     }
-    .sponsor .sponsors-title::before{
+
+    .sponsor .sponsors-title::before {
         height: 36px;
         left: 25px;
     }
-    .home-event-card .home-event-card-img{
+
+    .home-event-card .home-event-card-img {
         max-width: 100% !important;
     }
 
@@ -2697,12 +2709,14 @@ h4 {
         height: 66px;
     }
 }
-@media(max-width:517px){
-    .subaru-car-title h3::before{
+
+@media(max-width:517px) {
+    .subaru-car-title h3::before {
         height: 62px;
     }
-     .gallery-right-img{
-                bottom: -223px;
+
+    .gallery-right-img {
+        bottom: -223px;
         right: -117px;
     }
 }
@@ -2814,8 +2828,8 @@ h4 {
     }
 }
 
-@media(max-width:415px){
-        .events h3::before{
-            left: 40px;
-        }
+@media(max-width:415px) {
+    .events h3::before {
+        left: 40px;
+    }
 }
