@@ -329,7 +329,7 @@ h4 {
 
 .hero-img-3 {
     position: absolute;
-    top: 377px;
+    top: 380px;
     left: 0;
     z-index: -1;
 }
@@ -1695,7 +1695,22 @@ h4 {
 
 
 /* --- media query start--- */
+@media(max-width:1150px){
+
+    /* home page -- */
+    .subaru-car-box{
+        max-width: 400px;
+    }
+    .subaru-car{
+        max-width: 440px;
+    }
+    .subaru-shoe{
+        left: -100px;
+    }
+
+}
 @media(max-width:1100px){
+
     .logo{
         width: 400px;
     }
@@ -1712,7 +1727,21 @@ h4 {
     }
     
 }
+@media(max-width:1063px){
+    /* -- home page -- */
+    .subaru-car-title h3{
+        font-size:30px;
+    }
+    .subaru-car-title h3::before{
+        height: 73px;
+        top: 0;
+    }
+}
 @media(max-width:1040px){
+    /* -- home page -- */
+    .subaru-shoe{
+        left: -115px;
+    }
     .nav-links{
         position: fixed;
         top:45px;
@@ -1769,6 +1798,43 @@ h4 {
   }
 }
 @media(max-width:991px){
+    /* -- home page -- */
+    .subaru-row .col-50{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .subaru-car-title{
+        margin-bottom: 40px;
+       
+    }
+    .subaru-subtitle,.subaru-subtitle-2{
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-btn{
+        margin: auto;
+    }
+     .subaru-car-title h3{
+        max-width:650px;
+        margin: auto;
+        padding-bottom:25px;
+        text-align: center;
+     }
+    .subaru-car-title h3::before{
+        height: 36px;
+        left: 50px;
+    }
+    .subaru-car-box{
+        max-width:510px;
+        margin: auto;
+    }
+    .subaru-car{
+        max-width:847px;
+       
+        right: 10px;
+        object-fit: cover;
+    }
+    /* -- events page -- */
     .events-card{
         flex-direction: column;
         height: 550px;
@@ -1829,6 +1895,14 @@ h4 {
     }
     .hero-title h2{
         font-size: 38px;
+    }
+    .hero-title{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero{
+        padding: 40px 0 10px 0;
     }
 
 
@@ -1914,6 +1988,13 @@ h4 {
        }
 }
 @media(max-width:800px){
+    /*  -- home page -- */
+    .subaru-car{
+        max-width: 440px;
+    }
+    .subaru-car-box{
+        max-width: 400px;
+    }
     /* -- contact page -- */
     .contact-card-group{
         padding: 40px 0 10px 0;
@@ -1938,6 +2019,22 @@ h4 {
        }
 }
 @media(max-width:767px){
+    /* -- home page -- */
+    .banner{
+        padding: 140px 0 160px 0;
+    }
+    .banner-content h1{
+        font-size: 40px;
+    }
+    .banner-content h1::before{
+        height: 88px;
+    }
+    .hero-img-1, .hero-img-2{
+        height: 620px;
+    }
+
+
+
     .nav-links{
         top: 74px;
     }
@@ -2048,7 +2145,58 @@ h4 {
        
     
 }
+@media(max-width:670px){
+        .subaru-car-box{
+            max-width: 300px;
+        }
+        .subaru-car{
+            max-width: 340px;
+        }
+}
 @media(max-width:575px){
+      /* -- home page -- */
+    .banner{
+        padding: 100px 0 100px 0;
+    }
+    .banner-content h1{
+        font-size: 30px;
+    }
+    .banner-content h1::before{
+        height: 33px;
+    }
+    .cmn-btn{
+        width: 200px;
+        height: 50px;
+    }
+    .hero-title h2{
+        font-size: 28px;
+    }
+    .countdown-time{
+        font-size: 20px;
+    }
+    .countdown-day{
+        font-size: 17px;
+    }
+    .hero-img-1, .hero-img-2{
+        height: 550px;
+    }
+    .subaru-car-box{
+        max-width: 100%;
+        
+    }
+    .subaru-car{
+        max-width: 100%;
+        right: 0;
+        top: 0;
+        height: 100%;
+    }
+    .subaru-shoe{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    /* -- event page -- */
     .events-banner{
         padding: 100px 0;
     }
@@ -2171,7 +2319,22 @@ h4 {
         height: 85px;
        }
 }
+@media(max-width:547px){
+    .banner-content h1::before{
+        height: 66px;
+    }
+}
 @media(max-width:500px){
+    /* -- home page -- */
+    .hero-title h2{
+        font-size: 25px;
+    }
+    .hero-right{
+        flex-wrap: wrap;
+
+    }
+
+
     .nav-links{
         top: 92.23px;
     }
