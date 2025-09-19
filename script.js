@@ -51,5 +51,11 @@ $(document).ready(function () {
     });
   });
 
+  $(".hamburger").click(function(e){
+    e.preventDefault();
+    $(".nav-links").toggleClass("on");
+    $(".hamburger i").toggleClass("ri-close-large-line");
+  })
+
 
 })

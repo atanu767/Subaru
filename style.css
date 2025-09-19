@@ -104,6 +104,11 @@ h4 {
     margin: 0 auto;
     padding: 0 15px;
 }
+.contact-card-container{
+    max-width: 1083px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 .col-100 {
     max-width: 100%;
@@ -126,6 +131,11 @@ h4 {
 .col-35 {
     max-width: 35%;
     flex: 0 0 35%;
+    padding: 0 15px;
+}
+.col-33{
+    max-width: 33%;
+    flex: 0 0 33%;
     padding: 0 15px;
 }
 
@@ -156,7 +166,7 @@ h4 {
 /* --- header top section start --- */
 
 .banner-top {
-    width: 100%;
+    max-width: 100%;
     padding: 9px 0;
     background: var(--primary-color);
 
@@ -185,14 +195,19 @@ h4 {
 /* --- header section start --- */
 
 .header {
-    width: 100%;
+    max-width: 100%;
     padding: 17px 0;
+}
+.logo{
+    width: 527px;
+    overflow: hidden;
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .nav-links {
@@ -508,14 +523,17 @@ h4 {
 /* ---events section start--- */
 
 .events {
-    padding: 50px 0 100px 0;
+    padding: 200px 0 100px 0;
     position: relative;
 
+}
+.events .row{
+    margin: 100px 15px 0;
 }
 
 .events-1-img {
     position: absolute;
-    top: 90px;
+    top: 140px;
     left: -80px;
     z-index: -1;
 }
@@ -526,7 +544,7 @@ h4 {
     width: 100%;
    
 
-    top:40px;
+    top:0px;
     
 
     left: 0;   
@@ -537,7 +555,7 @@ h4 {
     margin: auto;
     text-align: center;
     position: relative;
-    padding:60px 0 64px 0;
+    padding:60px 0 0px 0;
 }
 
 .events h3::before {
@@ -581,6 +599,9 @@ h4 {
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.07);
     margin-bottom: 45px;
 }
+.perfect{
+    margin-bottom: 50px !important;
+}
 
 .events-card-2 {
     padding: 20px 5px 20px 20px;
@@ -605,7 +626,7 @@ h4 {
 
 .events-card-img-2 {
     width: 400px;
-    padding: 20px 60px 20px;
+    padding: 20px 10px 20px;
     min-height: 220px;
     display: flex;
     justify-content: center;
@@ -652,6 +673,9 @@ h4 {
 
 .events-card-title p {
     margin-bottom: 12px;
+}
+.events-card-title-1 p{
+    margin-bottom: 40px !important;
 }
 
 .events-card-btn {
@@ -892,7 +916,7 @@ h4 {
 /* ---footer-section-start--- */
 
 .footer {
-    padding: 94px 0 90px 0;
+    padding: 94px 0 70px 0;
 }
 
 .footer .row {
@@ -1453,15 +1477,16 @@ h4 {
 .contact-card-group .contact-card-box{
     max-width:1083px;
     display: flex;
-    justify-content:space-between;
+    
+    justify-content:center;
     align-items: center;
     padding: 0 15px;
-    
-     margin: auto;
+    gap: 30px;
+    margin: auto;
 }
 
 .contact-card-group .contact-card{
-    padding:32px 54px 30px;
+    padding:32px 30px 30px;
     box-shadow: 0 4px 30px 0px rgba(0, 0, 0, 0.07);
     border: 1px solid #ebebeb;
     display: flex;
@@ -1469,7 +1494,7 @@ h4 {
     align-items: center;
     flex-direction: column;
     height: 248px;
-    width: 335px;
+    /* width: 335px; */
     text-align: center;
    
 }
@@ -1514,6 +1539,12 @@ h4 {
 .contact-get-in-touch{
         padding: 80px 0;
         background: #f5f8fa;
+}
+.contact-get-in-touch-left-img{
+    height: 430px;
+}
+.contact-get-in-touch-left-img img{
+    height: 100%;
 }
 
 .contact-get-in-touch-left h3{
@@ -1593,6 +1624,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 25px;
   
   
  
@@ -1641,5 +1673,529 @@ h4 {
 .accordion-header .minus { display: none; }
 
 .accordion-header.active .plus { display: none; }
-.accordion-header.active .minus { display: inline-block; }
+.accordion-header.active .minus { display: inline-block; color: var(--black-color);}
 /* --- faq section end --- */
+
+/* -- hamburger menu -- */
+.hamburger{
+    position: absolute;
+    top:50%;
+    right: 20px;
+    transform: translate(0%,-50%);
+    display: none;
+}
+.hamburger a i{
+    font-size: 35px;
+    color: var(--btn-color);
+}
+
+
+
+/* --- media query start--- */
+@media(max-width:1100px){
+    .logo{
+        width: 400px;
+    }
+    .nav-links li{
+        margin: 0 14px;
+    }
+    .events-card{
+        height: 380px;
+    }
+
+    /* -- result page --- */
+    .series-card-img img{
+        height: 100%;
+    }
+    
+}
+@media(max-width:1040px){
+    .nav-links{
+        position: fixed;
+        top:45px;
+        right:-100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background:#b6ecba;
+        transition: 0.4s ease-in-out;
+        width: 350px;
+        height: 100%;
+        z-index: 999;
+    }
+    .nav-links li{
+        margin: 0;
+    }
+    .hamburger{
+        display: block;
+        z-index: 9999;
+    }
+    .on{
+        right: 0;
+    }
+
+    /* -- result page -- */
+
+    .series-card{
+        flex-direction: column;
+    }
+    .series-card-img img{
+        width: 446.5px;
+    }
+
+    .series-card-img img{
+        max-width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .series-card h3,.series-card p{
+        max-width: 100%;
+    }
+
+    /* -- sponsor page -- */
+    .sponsors-hero-left h2{
+        font-size: 35px;
+    }
+
+    /* -- contact page -- */
+  .contact-card-group .contact-card{
+    height: 260px;
+  }
+}
+@media(max-width:991px){
+    .events-card{
+        flex-direction: column;
+        height: 550px;
+    }
+    .events-page-card .col-50{
+        margin-bottom: 10px;
+    }
+    .events-card-img-2{
+       
+        overflow: hidden;
+    }
+    .footer .col-30{
+        max-width: 40%;
+        flex: 0 0 40%;
+    }
+    .footer-first,.footer-middle-left{
+        margin-bottom: 20px;
+    }
+
+    /* -- result page -- */
+
+    .series-card h3{
+        font-size: 19px;
+    }
+    .series-point-title h2{
+        font-size: 35px;
+    }
+
+    /* -- sponsor page -- */
+    .sponsors-hero{
+        padding: 60px 0;
+    }
+    .sponsors-hero-left h2{
+        font-size: 30px;
+    }
+    .sponsors-slider .slick-list{
+        padding: 50px 0;
+    }
+
+
+       /*-- faq page --  */
+       .faq-question-box{
+        padding: 60px 100px 40px 100px;
+       }
+       .faq-question{
+        padding: 60px 0;
+       }
+
+}
+@media(max-width:950px){
+     .events-page-card .col-50{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .events-card{
+        max-width: 100%;
+    }
+     .events-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 550px;
+        overflow: hidden;
+    }
+    .events-card-title{
+        text-align: center;
+    }
+    .events-card-title h4,.events-top-title{
+        margin: auto;
+    }
+    .events-card-btn{ max-width: 380px;
+        margin: auto;
+    }
+    .question-box h3{
+        font-size: 30px;
+    }
+    .question-box p{
+        font-size: 25px;
+    }
+    .question-btn{
+        max-width: 200px;
+        height: 50px;
+    }
+    .sponsor-left-img{
+        left: 0;
+        bottom: 0;
+    }
+    .footer-logo{
+        max-width: 200px;
+        padding-bottom: 23px;
+    }
+    .footer-first p{
+        margin: auto;
+    }
+
+    /* -- sponsor page -- */
+    .sponsors-hero-right-bg{
+        width: 300px;
+    }
+
+    /* -- contact page -- */
+      .contact-card-group{
+        padding: 70px 0 40px 0;
+      }
+    .contact-card-group .col-33{
+        max-width: 50%;
+        flex:0 0 50%;
+        margin-bottom: 30px;
+    }
+    .contact-get-in-touch-left h3{
+        font-size: 35px;
+    }
+    .contact-get-in-touch-left-img{
+        height: 442px;
+    }
+
+       /*-- faq page --  */
+       .faq-content h1{
+        font-size: 50px;
+       }
+       .faq-content h1::before{
+        height: 105px;
+       }
+       .faq-question-box{
+        padding: 50px 80px 40px 80px;
+       }
+       .accordion-head-left strong{
+        font-size: 18px;
+       }
+}
+@media(max-width:800px){
+    /* -- contact page -- */
+    .contact-card-group{
+        padding: 40px 0 10px 0;
+    }
+    .contact-get-in-touch{
+        padding: 40px 0;
+    }
+    .contact-get-in-touch .col-50{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .contact-get-in-touch-left-img{
+        margin-bottom: 30px;
+    }
+    .contact-get-in-touch-left-img img{
+        width: 100%;
+    }
+
+      /*-- faq page --  */
+       .faq-question-box{
+        padding:40px;
+       }
+}
+@media(max-width:767px){
+    .nav-links{
+        top: 74px;
+    }
+    .banner-wrap{
+        flex-direction: column;
+    }
+    .logo{
+        width: 300px;
+    }
+    .events-content h1{
+        font-size: 50px;
+    }
+    .events-content h1::before{
+        top: 0;
+    }
+    .events-card-2{
+        padding: 20px;
+    }
+    .sponsor-left-img{
+        left: 0;
+        bottom: 30px;
+    }
+    .footer .col-30,.footer .col-20{
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+    .footer-middle-left,.footer-last{
+        text-align: center;
+    }
+    .follow-links{
+        justify-content: center;
+    }
+
+    /* -- result page -- */
+    .result-content h1{
+        font-size:50px;
+    }
+    .result-content h1::before{
+        height: 100px;
+        top: 3px;
+    }
+
+     /* -- sponsor page -- */
+     .sponsors-content h1{
+        font-size:50px;
+    }
+    .sponsors-content h1::before{
+        height: 50px;
+        top: 0;
+    }
+     .sponsors-hero-left h2,.sponsors-hero-left p{
+        margin: auto;
+        text-align: center;
+        padding-bottom: 25px;
+     }
+     .sponsors-hero .col-50{
+        max-width: 100%;
+        flex: 0 0 100%;
+     }
+     .sponsors-hero-right-bg{
+        top:-14px;
+     }
+     .sponsors-hero-left{
+        margin: 0 0 20px 0;
+     }
+
+     /* -- contact page -- */
+      .contact-banner h1{
+        font-size: 50px;
+    }
+    .contact-banner h1::before{
+        top: 0;
+        height: 52px;
+    }
+    .contact-card-group .contact-card p{
+        font-size: 20px;
+    }
+
+     /*-- faq page --  */
+     
+       .faq-question-box{
+        padding:30px;
+       }
+       .accordion-head-left strong{
+        font-size: 16px;
+       }
+       .accordion-content p{
+        font-size: 15px;
+       }
+       
+    
+}
+@media(max-width:575px){
+    .events-page-card{
+        padding: 60px 0;
+    }
+    .events-card{
+        padding: 0;
+    }
+    .sponsor-left-img{
+        left: 0;
+        bottom: 50px;
+    }
+    .events-card-img-2,.events-card-img{
+        max-width: 300px;
+    }
+    .events-card-img{
+        padding: 20px;
+    }
+    .question-box h3{
+        font-size: 25px;
+    }
+    .question-box p{
+        font-size: 20px;
+    }
+     .footer .col-30,.footer .col-20{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .footer .row{
+        padding-bottom: 30px;
+    }
+   
+    .company-details{
+    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .footer-middle{
+        margin-bottom: 25px;
+    }
+    .footer{
+        text-align: center;
+        padding: 50px 0;
+    }
+    .footer-logo{
+        margin: auto;
+    }
+
+     /* -- result page -- */
+     
+     .series-point{
+        padding: 50px 25px;
+     }
+     .series-card{
+        margin-bottom: 20px;
+     }
+     .series-card img{
+        width: 495px;
+        
+     }
+     .series-point .col-50{
+        max-width: 100%;
+        flex: 0 0 100%;
+     }
+      .series-point-title h2{
+        font-size: 25px;
+    }
+    .series-point-title strong{
+        margin-bottom: 30px;
+    }
+
+    /* -- sponsor page -- */
+    .sponsors-hero-left h2{
+        font-size:25px;
+    }
+    .sponsors-hero-right-bg{
+        width: 250px;
+    }
+    .sponsors-hero .sponsor-left-img{
+        bottom: 40px;
+    }
+
+    /* -- contact page -- */
+    .contact-card-group .col-33{
+        max-width: 100%;
+        flex:0 0 100%;
+        
+    }
+
+    /* -- faq page -- */
+    .faq-question-box{
+        margin-bottom: 180px;
+    }
+    .accordion-content{
+        padding: 38px 28px 8px 56px;
+    }
+    .accordion-content::before{
+        left: 30px;
+    }
+     .faq-content h1{
+        font-size: 40px;
+       }
+       .faq-content h1::before{
+        height: 85px;
+       }
+}
+@media(max-width:500px){
+    .nav-links{
+        top: 92.23px;
+    }
+    .logo{
+        width: 250px;
+    }
+    .banner-top-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+.events-content h1{
+        font-size: 40px;
+    }
+    .events-content h1::before{
+        height: 44px;
+    }
+    
+    /* -- result page -- */
+     .result-content h1{
+        font-size:40px;
+    }
+    .result-content h1::before{
+        height: 80px;
+        top: 3px;
+    }
+
+    /* -- sponsor page -- */
+    .sponsors-content h1{
+        font-size:40px;
+    }
+    .sponsors-content h1::before{
+        height: 44px;
+        top: 0;
+    }
+
+    /* -- contact page -- */
+     .contact-banner h1{
+        font-size: 40px;
+    }
+    .contact-banner h1::before{
+        top: 0;
+        height: 44px;
+    }
+
+    /* -- faq page -- */
+    .accordion-head-left strong{
+        font-size: 15px;
+    }
+    .faq-question-box{
+        padding: 15px;
+    }
+    .accordion-content{
+        padding: 28px 28px 6px 28px;
+    }
+    .accordion-content::before{
+        left: 5px;
+        top: 30px;
+    }
+    .accordion-head-left img{
+        width: 36px;
+        height: 36px;
+    }
+    .accordion-content p{
+        font-size: 14px;
+    }
+    .accordion-head-left strong{
+        font-size: 14px;
+    }
+     .faq-content h1{
+        font-size: 35px;
+       }
+       .faq-content h1::before{
+        height:77px;
+        top: 0;
+       }
+} 
