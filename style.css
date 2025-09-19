@@ -1733,12 +1733,7 @@ h4 {
     .events-2-img{
         height: 990px;
     }
-    .events-card{
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-
-    }
+    
     
 }
 @media(max-width:1063px){
@@ -1755,6 +1750,12 @@ h4 {
     /* -- home page -- */
     .subaru-shoe{
         left: -115px;
+    }
+    .events-card{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
     }
     .nav-links{
         position: fixed;
