@@ -531,7 +531,7 @@ h4 {
 
 }
 .events .row{
-    margin: 100px 15px 0;
+    margin: 100px 0px 0 0;
 }
 
 .events-1-img {
@@ -587,6 +587,20 @@ h4 {
     background: var(--btn-color);
     left:0px;
     top: 0px;
+}
+.home-event-card{
+     max-width: 570px;
+  height: 100%;
+    padding: 20px 30px 20px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background: var(--text-color);
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.07);
+    margin-bottom: 45px;
+}
+.events .col-50{
+    margin-bottom: 30px;
 }
 
 
@@ -1751,11 +1765,16 @@ h4 {
     .subaru-shoe{
         left: -115px;
     }
+
+    /* -- event card -- */
     .events-card{
         flex-direction: column;
         justify-content: center;
         align-content: center;
 
+    }
+    .events-page-card .col-50{
+        margin-bottom: 30px;
     }
     .events-card-img{
         max-width: 100%;
@@ -2074,6 +2093,26 @@ h4 {
     .hero-main-img{
         margin-bottom: 10px;
     }
+    .events .col-50{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .events-card-img{
+        width: 100%;
+    }
+    .events-2-img{
+        height: 1840px;
+    }
+    .events .row{
+        margin: 50px 0 0 0;
+    }
+    .events h3{
+        font-size: 30px;
+    }
+    .events h3::before{
+        height: 36px;
+        left: 60px;
+    }
 
 
 
@@ -2241,6 +2280,12 @@ h4 {
     .subaru-shoe{
         left: 50%;
         transform: translateX(-50%);
+    }
+    .events-2-img{
+        height: 1830px;
+    }
+    .events-card-title h4{
+        font-size: 17px;
     }
 
 
