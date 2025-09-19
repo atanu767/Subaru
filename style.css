@@ -593,7 +593,7 @@ h4 {
 
 .events-card {
     max-width: 570px;
-    height: 311px;
+    /* height: 311px; */
     padding: 20px 30px 20px 20px;
     display: flex;
     justify-content: center;
@@ -1710,6 +1710,11 @@ h4 {
 
 }
 @media(max-width:1100px){
+    /*  -- home page -- */
+    .events{
+        padding: 190px 0 90px 0;
+    }
+   
 
     .logo{
         width: 400px;
@@ -1724,6 +1729,15 @@ h4 {
     /* -- result page --- */
     .series-card-img img{
         height: 100%;
+    }
+    .events-2-img{
+        height: 990px;
+    }
+    .events-card{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
     }
     
 }
@@ -1833,6 +1847,9 @@ h4 {
        
         right: 10px;
         object-fit: cover;
+    }
+    .hero-main-img{
+        margin-bottom: 50px;
     }
     /* -- events page -- */
     .events-card{
@@ -2031,6 +2048,9 @@ h4 {
     }
     .hero-img-1, .hero-img-2{
         height: 620px;
+    }
+    .hero-main-img{
+        margin-bottom: 10px;
     }
 
 
