@@ -1823,6 +1823,13 @@ h4 {
     .banner-content h1{
         font-size: 50px;
     }
+    .banner-content h1::before{
+        height: 110px;
+        top: 0;
+    }
+    .hero-title h2{
+        font-size: 38px;
+    }
 
 
     /* -- events page -- */
