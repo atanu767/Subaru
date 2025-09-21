@@ -542,8 +542,8 @@ h4 {
 
 .events-1-img {
     position: absolute;
-    top: 130px;
-    left: -80px;
+    top: 110px;
+    left: 0px;
     z-index: -1;
 }
 
@@ -2006,6 +2006,9 @@ h4 {
     .hero-main-img {
         margin-bottom: 50px;
     }
+    .home-event-card{
+        flex-direction: column;
+    }
 
     /* .events-2-img {
         height: 1180px;
@@ -2278,6 +2281,9 @@ h4 {
 
     .events-card-img {
         width: 100%;
+    }
+    .home-event-card{
+        max-width: 100%;
     }
 
     .events-2-img {
@@ -2718,6 +2724,9 @@ h4 {
     .gallery-right-img {
         bottom: -223px;
         right: -117px;
+    }
+    .events-1-img{
+        top: 130px;
     }
 }
 
