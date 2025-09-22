@@ -1,4 +1,13 @@
-$(document).ready(function () {
+$(document).ready(function(){
+  
+  
+$(".hamburger").click(function(e){
+  e.preventDefault();
+   $(".nav-links").toggleClass("on");
+    $(".hamburger i").toggleClass("ri-close-large-line");
+  }),
+
+
   $('.sponsor-box').slick({
     dots: false,
     infinite: true,
@@ -51,11 +60,7 @@ $(document).ready(function () {
     });
   });
 
-  $(".hamburger").click(function(e){
-    e.preventDefault();
-    $(".nav-links").toggleClass("on");
-    $(".hamburger i").toggleClass("ri-close-large-line");
-  })
+  
 
 
 })
