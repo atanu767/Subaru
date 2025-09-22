@@ -3069,6 +3069,9 @@ h4 {
     .accordion-content {
         padding: 38px 28px 8px 56px;
     }
+    .accordion-item{
+        margin-bottom: 20px;
+    }
 
     .accordion-content::before {
         left: 30px;
