@@ -334,7 +334,7 @@ h4 {
 
 .hero-img-3 {
     position: absolute;
-    top: 380px;
+    top: 377px;
     left: 0;
     z-index: -1;
 }
@@ -542,7 +542,7 @@ h4 {
 
 .events-1-img {
     position: absolute;
-    top: 110px;
+    top: 140px;
     left: 0px;
     z-index: -1;
 }
@@ -599,42 +599,81 @@ h4 {
 
 .home-event-card {
     max-width: 570px;
-    height: 100%;
-    padding: 20px 30px 20px 20px;
+
+    padding: 18px 20px 20px 20px;
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: space-between;
+    gap: 20px;
     background: var(--text-color);
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.07);
     margin-bottom: 45px;
+}
+
+.home-event-card-1 P {
+    margin-bottom: 42px !important;
+}
+
+.home-event-card p {
+    font-size: 16px;
+}
+
+.home-event-card-title p {
+    margin-bottom: 20px;
+}
+
+.home-event-card strong,
+h4 {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.home-event-card-img {
+    max-width: 268px;
+    padding: 20px 35px 39px 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    outline: 1px solid #e2e2e2;
+}
+
+.home-event-card-img img {
+    height: 204px;
+    max-width: 205PX;
+}
+
+.home-event-card-img-2 {
+    max-width: 268px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    padding: 23px 70px 27px 60px;
+    outline: 1px solid #e2e2e2;
+}
+
+.home-event-card-img-2 img {
+    max-width: 205px;
+    height: 213px;
 }
 
 .events .col-50 {
     margin-bottom: 30px;
 }
 
-
-
-.events-card {
-    max-width: 570px;
-    /* height: 311px; */
-    padding: 20px 30px 20px 20px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    background: var(--text-color);
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.07);
-    margin-bottom: 45px;
+.home-event-card-title-2 p {
+    margin-bottom: 20px !important;
 }
+
+
+
+
 
 .perfect {
     margin-bottom: 50px !important;
 }
 
-.events-card-2 {
-    padding: 20px 5px 20px 20px;
-    height: 311px;
-}
+
 
 .events-card-2 h4 {
     margin-bottom: 5px !important;
@@ -668,12 +707,25 @@ h4 {
     overflow: hidden;
 }
 
+.events-page-card .col-50 {
+    margin-bottom: 38px;
+}
+
+.events-page-card .events-card p {
+
+    font-size: 16px;
+}
+
+.events-page-card .events-card-2 p {
+    font-size: 16px;
+}
+
 .events-top-title {
     display: flex;
 
     align-items: center;
-    gap: 10px;
-    max-width: 214px;
+    gap: 5px;
+    /* max-width: 214px; */
 }
 
 .events-top-title span {
@@ -681,6 +733,7 @@ h4 {
     font-size: 14px;
     color: #00205B;
     font-family: "Nunito Sans", sans-serif;
+
 }
 
 .events-card-title h4 {
@@ -696,6 +749,8 @@ h4 {
 .events-card-title strong {
     font-weight: 600;
     display: block;
+    margin-bottom: 8px;
+
 
 }
 
@@ -727,9 +782,9 @@ h4 {
     background: var(--text-color);
 }
 
-.events-card-btn-2 {
+/* .events-card-btn-2 {
     margin-top: 20px;
-}
+} */
 
 .events-bottom-btn {
     max-width: 294px;
@@ -785,6 +840,11 @@ h4 {
 
 .gallery-card {
     position: relative;
+    height: 292px;
+}
+
+.gallery-img {
+    height: 100%;
 }
 
 .gallery-overlay {
@@ -792,7 +852,7 @@ h4 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 97%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1112,10 +1172,150 @@ h4 {
     background: var(--btn-color);
 }
 
+.events-card {
+    max-width: 570px;
+
+    padding: 18px 24px 20px 19px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background: var(--text-color);
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.07);
+    height: 100%;
+}
+
+.events-card-2 {
+    max-width: 570px;
+    display: flex;
+    
+    gap: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.07);
+
+    padding: 18px 6px 20px 19px;
+    height: 100%;
+}
+
+.one {
+    max-width: 268px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 35px 39px 28px;
+    background: #FBFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.one img {
+    max-width: 205px;
+    height: 204px;
+}
+
+.two {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 268px;
+    padding: 23px 70px 27px 60px;
+    background: #FBFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.two img {
+    max-width: 138px;
+    height: 213px;
+}
+
+.three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 268px;
+    padding: 34px 48px 33px 49px;
+    background: #FBFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.three img {
+    max-width: 171px;
+    height: 196px;
+}
+
+.four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 268px;
+    padding: 30px 56px 29px 57px;
+    background: #FBFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.four img {
+    max-width: 155px;
+    height: 204px;
+}
+
+.five {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 268px;
+    padding: 37px 40px 37px 41px;
+    background: #FBFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.five img {
+    max-width: 187px;
+    height: 189px;
+}
+
+.card-5 {
+    margin-bottom: 70px !important;
+}
+
+.six {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 268px;
+    padding: 32px 69px 31px;
+    background: #FBFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.six img {
+    max-width: 130px;
+    height: 200px;
+}
+
+.seven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 268px;
+    padding: 35px 46px;
+    background: #FBFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.seven img {
+    max-width: 176px;
+    height: 193px;
+}
+
+
+
 .events-page-card {
     padding: 100px 0 70px 0;
     position: relative;
     overflow: hidden;
+}
+
+.events-card p {
+    margin-bottom: 38px;
 }
 
 .row-gap {
@@ -1796,6 +1996,30 @@ h4 {
     .events {
         padding: 190px 0 90px 0;
     }
+    
+    .home-event-card {
+        flex-direction: column;
+    }
+
+    .home-event-card-1 P {
+        margin-bottom: 18px !important;
+    }
+
+    .home-event-card-2 {
+        padding: 18px 20px 20px !important;
+    }
+
+    .home-event-card-img {
+        max-width: 100%;
+    }
+
+    .home-event-card-img-2 {
+        max-width: 100%;
+    }
+
+    .events-1-img {
+        top: 150px;
+    }
 
 
     .logo {
@@ -1806,8 +2030,30 @@ h4 {
         margin: 0 14px;
     }
 
-    .events-card {
+    /* -- events page -- */
+    .events-card,
+    .events-card-2 {
+        flex-direction: column;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six,
+    .seven {
+        max-width: 100%;
+    }
+    .events-card-2{
+        padding: 18px 24px 20px 19px;
+    }
+
+    /* .events-card {
         height: 380px;
+    } */
+    .hero-title h2 {
+        font-size: 40px;
     }
 
     /* -- result page --- */
@@ -1841,6 +2087,12 @@ h4 {
     .subaru-shoe {
         left: -115px;
     }
+    .hero-img-1, .hero-img-2 {
+        height: 600px;
+    }
+    .hero-img-3{
+        top: 355px;
+    }
 
     /* -- event card -- */
     .events-card {
@@ -1870,9 +2122,8 @@ h4 {
         height: 860px;
     } */
 
-    .events-card-2 {
-        padding: 20px 30px 20px 20px;
-    }
+    
+    
 
     .events-card-img-2 {
         padding: 20px 25px 30px;
@@ -1947,6 +2198,9 @@ h4 {
         max-width: 100%;
         flex: 0 0 100%;
     }
+    .hero-img-3{
+        top: 360px;
+    }
 
     .subaru-car-title {
         margin-bottom: 40px;
@@ -1963,11 +2217,19 @@ h4 {
 
     .gallery-card {
         width: 50%;
+        height: 365px;
     }
 
     .gallery-img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
+
+    .gallery-overlay {
+        height: 100%;
+    }
+
 
     .subaru-subtitle,
     .subaru-subtitle-2 {
@@ -2006,22 +2268,24 @@ h4 {
     .hero-main-img {
         margin-bottom: 50px;
     }
-    .home-event-card{
-        flex-direction: column;
-    }
+
 
     /* .events-2-img {
         height: 1180px;
     } */
 
     /* -- events page -- */
+    .events-page-card{
+        padding: 50px 0 50px 0;
+    }
+    
     .events-card {
         flex-direction: column;
-        height: 550px;
+        
     }
 
     .events-page-card .col-50 {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .events-card-img-2 {
@@ -2089,6 +2353,9 @@ h4 {
     .hero-title h2 {
         font-size: 38px;
     }
+    .hero-img-3{
+        top: 365px;
+    }
 
     .hero-title {
         flex-direction: column;
@@ -2102,28 +2369,9 @@ h4 {
 
 
     /* -- events page -- */
-    .events-page-card .col-50 {
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
-
-    .events-card {
-        max-width: 100%;
-    }
-
-    .events-card {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 550px;
-        overflow: hidden;
-    }
-
-    .events-card-title {
-        text-align: center;
-    }
-
-    .events-card-title h4,
+  
+   
+    /* .events-card-title h4,
     .events-top-title {
         margin: auto;
     }
@@ -2131,7 +2379,7 @@ h4 {
     .events-card-btn {
         max-width: 380px;
         margin: auto;
-    }
+    } */
 
     .question-box h3 {
         font-size: 30px;
@@ -2201,10 +2449,25 @@ h4 {
         font-size: 18px;
     }
 }
+@media(max-width:850px){
+    /* -- home page -- */
+    .hero-img-1, .hero-img-2{
+        height: 575px;
+    }
+    .hero-img-3{
+        top: 355px;
+    }
+}
 
 @media(max-width:800px) {
 
     /*  -- home page -- */
+    .hero-img-1, .hero-img-2{
+        height: 565px;
+    }
+    .hero-img-3{
+        top: 353px;
+    }
     .subaru-car {
         max-width: 440px;
     }
@@ -2248,6 +2511,21 @@ h4 {
         padding: 140px 0 160px 0;
     }
 
+    .home-event-card {
+        margin-bottom: 0;
+    }
+    .hero-img-1, .hero-img-2{
+        height: 545px;
+    }
+    .hero-img-3{
+        top: 340px;
+    }
+
+    .gallery-right-img {
+        bottom: -220px;
+    }
+
+
     .banner-content h1 {
         font-size: 40px;
     }
@@ -2265,11 +2543,7 @@ h4 {
         margin-bottom: 40px;
     }
 
-    .hero-img-1,
-    .hero-img-2 {
-        height: 620px;
-    }
-
+   
     .hero-main-img {
         margin-bottom: 10px;
     }
@@ -2282,12 +2556,21 @@ h4 {
     .events-card-img {
         width: 100%;
     }
-    .home-event-card{
+
+    .home-event-card {
         max-width: 100%;
     }
 
     .events-2-img {
-        height: 1840px;
+        min-height: 1720px;
+    }
+
+    .events {
+        padding: 150px 0 70px 0;
+    }
+
+    .events-1-img {
+        top:82px;
     }
 
     .events .row {
@@ -2370,6 +2653,18 @@ h4 {
         justify-content: center;
     }
 
+    /*  -- events page -- */
+    .events-page-card .col-50{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .events-card,.events-card-2{
+        max-width: 100%;
+    }
+    .events-card-title h4{
+        font-size: 18px;
+    }
+
     /* -- result page -- */
     .result-banner {
         padding: 100px 0;
@@ -2387,6 +2682,10 @@ h4 {
     /* -- sponsor page -- */
     .sponsors-banner {
         padding: 120px 0;
+    }
+
+    .sponsors-form h3 {
+        font-size: 35px;
     }
 
     .sponsors-content h1 {
@@ -2431,6 +2730,9 @@ h4 {
         top: 0;
         height: 52px;
     }
+    .contact-get-in-touch-left h3{
+        font-size: 30px;
+    }
 
     .contact-card-group .contact-card p {
         font-size: 20px;
@@ -2460,6 +2762,12 @@ h4 {
     .subaru-car-box {
         max-width: 300px;
     }
+    .hero-img-1, .hero-img-2{
+        height: 520px;
+    }
+    .hero-img-3{
+        top: 330px;
+    }
 
     .subaru-car {
         max-width: 340px;
@@ -2484,6 +2792,23 @@ h4 {
     .banner-content h1 {
         font-size: 30px;
     }
+     .hero-img-1, .hero-img-2{
+        height: 500px;
+    }
+    .hero-img-3{
+        top: 326px;
+    }
+
+    .gallery h3 {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+    .home-event-card h4{
+        font-size: 18px;
+    }
+    .home-event-card strong{
+        font-size: 16px;
+    }
 
     .banner-content h1::before {
         height: 33px;
@@ -2506,10 +2831,7 @@ h4 {
         font-size: 17px;
     }
 
-    .hero-img-1,
-    .hero-img-2 {
-        height: 550px;
-    }
+   
 
     .subaru-car-box {
         max-width: 100%;
@@ -2530,7 +2852,7 @@ h4 {
     }
 
     .events-2-img {
-        height: 1830px;
+        height: 1130px;
     }
 
     .events-card-title h4 {
@@ -2541,7 +2863,7 @@ h4 {
         width: 100%;
     }
 
-    .sponsor-box .slick-list {
+    .sponsorc .sponsor-box .slick-list {
         padding: 50px 0 220px 0;
     }
 
@@ -2557,24 +2879,40 @@ h4 {
     .home-event-card .home-event-card-img {
         max-width: 100% !important;
     }
+    .footer span{
+        font-size: 18px;
+    }
+    .footer-bottom span, .footer-bottom a{
+        font-size: 16px;
+    }
 
 
     /* -- event page -- */
+    .events-content h1{
+        font-size: 40px;
+    }
+    .events-content h1::before{
+        height: 44px;
+    }
     .events-banner {
         padding: 100px 0;
     }
 
-    .events-page-card {
-        padding: 60px 0;
+  .sponsor-bottom-img{
+    height: 370px;
+  }
+  
+    .events-card-title strong{
+        font-size: 16px;
     }
-
-    .events-card {
-        padding: 0;
+    .events-card-btn{
+        font-size: 16px;
+        width: 150px;
     }
 
     .sponsor-left-img {
         left: 0;
-        bottom: 50px;
+        bottom: 10px;
     }
 
     .events-card-img-2,
@@ -2587,11 +2925,14 @@ h4 {
     }
 
     .question-box h3 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .question-box p {
-        font-size: 20px;
+        font-size: 19px;
+    }
+    .question-btn{
+        font-size: 16px;
     }
 
     .footer .col-30,
@@ -2626,12 +2967,19 @@ h4 {
     }
 
     /* -- result page -- */
+    .result-content h1{
+        font-size: 40px;
+    }
+    .result-content h1::before {
+        height:88px;
+        top: 0px;
+    }
     .result-banner {
         padding: 80px 0;
     }
 
     .series-point {
-        padding: 50px 25px;
+        padding: 50px 0px;
     }
 
     .series-card {
@@ -2657,8 +3005,19 @@ h4 {
     }
 
     /* -- sponsor page -- */
+    .sponsors-content h1 {
+        font-size: 40px;
+    }
+        .sponsors-content h1::before {
+        height: 44px;
+        top: 0;
+    }
     .sponsors-banner {
         padding: 80px 0;
+    }
+
+    .sponsors-form h3 {
+        font-size: 30px;
     }
 
     .sponsors-hero-left h2 {
@@ -2674,14 +3033,28 @@ h4 {
     }
 
     /* -- contact page -- */
+    .contact-banner h1 {
+        font-size: 40px;
+    }
+    .contact-banner h1::before{
+        height: 44px;
+    }
     .contact-banner {
         padding: 80px 0;
+    }
+
+    .sponsors-form a {
+        height: 50px;
+        font-size: 16px;
     }
 
     .contact-card-group .col-33 {
         max-width: 100%;
         flex: 0 0 100%;
 
+    }
+    .contact-get-in-touch-left h3{
+        font-size: 25px;
     }
 
     /* -- faq page -- */
@@ -2714,9 +3087,21 @@ h4 {
     .banner-content h1::before {
         height: 66px;
     }
+    .events-1-img{
+        top: 100px;
+    }
 }
 
 @media(max-width:517px) {
+
+    /* -- home page -- */
+       .hero-img-1, .hero-img-2{
+        height:480px;
+    }
+    .hero-img-3{
+        top: 316px;
+    }
+
     .subaru-car-title h3::before {
         height: 62px;
     }
@@ -2725,8 +3110,12 @@ h4 {
         bottom: -223px;
         right: -117px;
     }
-    .events-1-img{
-        top: 130px;
+
+    .events-1-img {
+        top: 100px;
+    }
+    .events{
+        padding: 140px 0 50px 0;
     }
 }
 
@@ -2736,6 +3125,20 @@ h4 {
     .hero-title h2 {
         font-size: 25px;
     }
+
+    .cmn-btn,
+    .hero-btn {
+        width: 180px;
+        height: 45px;
+        font-size: 17px;
+    }
+
+    .events-bottom-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 17px;
+    }
+
 
     .hero-right {
         flex-wrap: wrap;
@@ -2759,44 +3162,56 @@ h4 {
     }
 
     .events-content h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .events-content h1::before {
-        height: 44px;
+        height:33px;
+    }
+    .events-2-img{
+        height: 1100px;
     }
 
     /* -- result page -- */
     .result-content h1 {
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .series-point {
+        padding: 30px 0;
     }
 
     .result-content h1::before {
-        height: 80px;
-        top: 3px;
+        height:66px;
+        top: 0px;
     }
 
     /* -- sponsor page -- */
     .sponsors-content h1 {
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .sponsors-form h3 {
+        font-size: 25px;
     }
 
     .sponsors-content h1::before {
-        height: 44px;
+        height: 33px;
         top: 0;
     }
 
     /* -- contact page -- */
     .contact-banner h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .contact-banner h1::before {
         top: 0;
-        height: 44px;
+        height: 33px;
     }
 
     /* -- faq page -- */
+   
     .accordion-head-left strong {
         font-size: 15px;
     }
@@ -2828,17 +3243,45 @@ h4 {
     }
 
     .faq-content h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .faq-content h1::before {
-        height: 77px;
+        height: 35px;
         top: 0;
+    }
+}
+@media(max-width:497px){
+       .hero-img-1, .hero-img-2{
+        height: 560px;
+    }
+    .hero-img-3{
+        top: 381px;
+    }
+}
+@media(max-width:475px){
+    /* -- home page -- */
+    .events-1-img{
+        top:120px;
+    }
+       .hero-img-1, .hero-img-2{
+        height: 560px;
+    }
+    .hero-img-3{
+        top: 381px;
     }
 }
 
 @media(max-width:415px) {
+    /* -- home page -- */
     .events h3::before {
         left: 40px;
+    }
+     .hero-img-3{
+        top: 387px;
+    }
+    /* -- events page -- */
+    .sponsor-left-img{
+        bottom: 20px;
     }
 }
