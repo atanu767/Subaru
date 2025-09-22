@@ -2871,14 +2871,14 @@ h4 {
     }
 
     .sponsor .sponsors-title {
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .sponsor .sponsors-title::before{
+        height:30px;
+        left: 45px;
     }
 
-    .sponsor .sponsors-title::before {
-        height: 36px;
-        left: 25px;
-    }
-
+    
     .home-event-card .home-event-card-img {
         max-width: 100% !important;
     }
